@@ -6,5 +6,8 @@ import (
 )
 
 func (s *serverApi) Fetch(context.Context, *main_v1.FetchRequest) (*main_v1.FetchResponse, error) {
-	panic("pizda")
+	return &main_v1.FetchResponse{
+		Success: true,
+		Message: "",
+	}, nil
 }
